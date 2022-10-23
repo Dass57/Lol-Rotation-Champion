@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
     MatCardModule,
     MatButtonModule,
     MatButtonToggleModule,
+    StoreModule.forRoot({}, {}),
   ],
   providers: [
     ApiRiotService,

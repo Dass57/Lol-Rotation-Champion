@@ -10,6 +10,6 @@ export class ApiRiotService {
   constructor(private readonly httpClient: HttpClient) {}
 
   getFreeChampionRotation(){
-    return this.httpClient.get(`${this.riot}/lol/platform/v3/champion-rotations?api_key=RGAPI-df096059-0500-49b6-8a08-bdc0f2baca2d`)
+    return this.httpClient.get(`${this.riot}/lol/platform/v3/champion-rotations?api_key=RGAPI-105a2fca-68f7-4b24-a207-9e9670eeef03`)
   }
 }
