@@ -19,7 +19,6 @@ export class ChampionsService {
       for (var i in champ.data) {
         if (champ.data[i].key == id) {
           this.tabChampInfo.push(champ.data[i])
-          console.log(this.tabChampInfo);
         }
       }
     })

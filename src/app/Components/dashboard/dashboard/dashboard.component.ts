@@ -15,17 +15,8 @@ export class DashboardComponent implements OnInit {
 
   constructor(
       private ApiRiot: ApiRiotService,
-      private championSerice: ChampionsService
-      )
-    {
-      ApiRiot.getFreeChampionRotation().subscribe(info => {
-        let infos = info as Infos
-        for (let key of infos.freeChampionIds) {
-          this.championSerice.search(key)
-          this.tabChampInfo = this.championSerice.tabChampInfo
-        }
-      })
-    }
+      private championSerice: ChampionsService)
+    {}
 
     ngOnInit(): void { }
 }
