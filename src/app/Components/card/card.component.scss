@@ -1,0 +1,19 @@
+.card-champ {
+  width: 200px;
+  height: 250px;
+
+}
+mat-card-content h2 {
+  color: RGB(147, 115, 65);
+}
+mat-card-header mat-card-title {
+  color: RGB(147, 115, 65);
+}
+mat-card-header mat-card-subtitle {
+  color:white;
+}
+.main-grid{
+  margin: 20px 100px 100px 100px;
+  background: linear-gradient(to bottom, rgba(10,10,12,1), rgba(0,0,0,0.7)), url("/assets/img/zaun.jpg");
+  background-repeat: no-repeat;
+}
