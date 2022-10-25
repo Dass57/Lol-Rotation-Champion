@@ -23,7 +23,7 @@ Afin de pouvoir exécuter l'application sur votre poste, vous devez d'aborder in
 * La liste des heros sont récuperé grace à l'Api riot game [CHAMPION-V3](https://developer.riotgames.com/apis#champion-v3) et la base de donné [Data Dragon](https://riot-api-libraries.readthedocs.io/en/latest/ddragon.html).
 * Chaque champion est affiché avec son nom sur des cartes cliquables qui redirige vers les details du champion séléctionne
 ```diff 
-- La cléf d'api n'est valable que 24h. Si elle doit etre changé, il faut modifier `api_key` dans Service/api-riot.service.ts
+- La cléf d'api n'est valable que 24h. Si elle doit etre changé, il faut modifier `api_key` dans src/environment/environment.ts
 ```
 
  
