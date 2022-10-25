@@ -32,6 +32,6 @@ Afin de pouvoir exécuter l'application sur votre poste, vous devez d'aborder in
 
 
 ### Detail
-* C'est la page de détails de chaque champion avec les informations jugé importan
+* C'est la page de détails de chaque champion avec les informations jugé important
 ![image](https://user-images.githubusercontent.com/116359487/197754242-6b544e9b-0195-43af-8eb3-84e62fbbad8c.png)
 ![Rota2](https://user-images.githubusercontent.com/116359487/197753999-33cb11eb-536c-4db0-8c58-c7aad7f2fe5b.gif)
