@@ -1,70 +1,49 @@
-<!-- <a routerLink="/dashboard">back</a> -->
 <div class="main">
   <div *ngFor="let champ of champInfo">
     <mat-grid-list cols="1" rowHeight="800">
 
-      <mat-grid-tile class="img">
-        <img class="img-blur" src="assets/img/splash/{{champ.name}}_0.jpg">
-      </mat-grid-tile>
-
       <mat-grid-tile>
-        <div class="mainInfo">
-          <h2 class="title">{{champ.title}}</h2>
-          <h1 class="name">{{champ.name}}</h1>
-          <mat-grid-list class="lore" cols="3" rowHeight="200">
-            <mat-grid-tile colspan="2" class="text">
-              <p style="margin-right: 10px;">{{champ.lore}}</p>
-              <hr>
-            </mat-grid-tile>
-            <mat-grid-tile>
-              <mat-list>
-                <mat-list-item>
-                  <p>Role(s) du champion: {{champ.tags}}</p>
-                </mat-list-item>
-                <mat-divider></mat-divider>
-                <mat-list-item>
-                  <p>Difficulté du champion: {{champ.info.difficulty}}</p>
-                </mat-list-item>
-                <mat-divider></mat-divider>
-                <mat-list-item>
-                  <p>Particularité: {{champ.partype}}</p>
-                </mat-list-item>
-              </mat-list>
-            </mat-grid-tile>
-          </mat-grid-list>
-        </div>
-      </mat-grid-tile>
-    </mat-grid-list>
-    <mat-grid-list  style="margin-top: -300px;" cols="4" rowHeight="300px">
-      <mat-grid-tile>
-        <mat-card class="spell">
-          <mat-card-header><h1>{{champ.spells[0].name}}</h1></mat-card-header>
-          <mat-card-content>{{champ.spells[0].description}}</mat-card-content>
-          <img src="assets/img/spell/{{champ.spells[0].id}}.png">
-        </mat-card>
-      </mat-grid-tile>
-      <mat-grid-tile>
-        <mat-card class="spell">
-          <mat-card-header><h1>{{champ.spells[1].name}}</h1></mat-card-header>
-          <mat-card-content>{{champ.spells[1].description}}</mat-card-content>
-          <img src="assets/img/spell/{{champ.spells[1].id}}.png">
-        </mat-card>
-      </mat-grid-tile>
-      <mat-grid-tile>
-        <mat-card class="spell">
-          <mat-card-header><h1>{{champ.spells[2].name}}</h1></mat-card-header>
-          <mat-card-content>{{champ.spells[2].description}}</mat-card-content>
-          <img src="assets/img/spell/{{champ.spells[2].id}}.png">
-        </mat-card>
-      </mat-grid-tile>
-      <mat-grid-tile>
-        <mat-card class="spell">
-          <mat-card-header><h1>{{champ.spells[3].name}}</h1></mat-card-header>
-          <mat-card-content>{{champ.spells[3].description}}</mat-card-content>
-          <img src="assets/img/spell/{{champ.spells[3].id}}.png">
-        </mat-card>
+        <img src="assets/img/splash/{{champ.name}}_0.jpg">
       </mat-grid-tile>
     </mat-grid-list>
 
+    <div class="mainInfo">
+      <div class="mainInfo-tittle">
+        <h2 class="title">{{champ.title}}</h2>
+        <h1 class="name">{{champ.name}}</h1>
+      </div>
+      <mat-grid-list class="lore" cols="3" rowHeight="200">
+        <mat-grid-tile colspan="2" class="text">
+          <p style="margin-right: 10px;">{{champ.lore}}</p>
+          <hr>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-list>
+            <mat-list-item>
+              <p>Role(s) du champion: <b>{{champ.tags}}</b></p>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <p style="margin-right: 10px;">Difficulté:</p>
+              <mat-progress-bar mode="determinate" value="{{Math.floor(champ.info.difficulty * 10)}}">
+              </mat-progress-bar>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <p>Particularité: <b>{{champ.partype}}</b></p>
+            </mat-list-item>
+          </mat-list>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+    <app-card-spell [champInfo]="champInfo"></app-card-spell>
   </div>
+
+      <div class="example-button-container" routerLink="dashboard">
+        <button mat-fab color="primary" >
+          <mat-icon>home</mat-icon>
+        </button>
+      </div>
+
+
 </div>

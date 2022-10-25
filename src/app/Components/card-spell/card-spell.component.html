@@ -1,0 +1,16 @@
+<div class="card-spells">
+  <mat-grid-list cols="4" rowHeight="500px">
+    <mat-grid-tile *ngFor="let spell of spellsInfos">
+      <mat-card class="spell">
+        <mat-card-title-group>
+          <mat-card-title>{{spell.name}}</mat-card-title>
+          <mat-card-subtitle>{{spell.leveltip.label}}</mat-card-subtitle>
+          <img mat-card-lg-image src="assets/img/spell/{{spell.id}}.png" >
+        </mat-card-title-group>
+        <mat-card-content style="margin-top: 30px;">
+          <p>{{spell.description}}</p>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

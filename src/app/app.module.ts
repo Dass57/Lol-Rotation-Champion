@@ -15,6 +15,10 @@ import { CardComponent } from './Components/card/card.component';
 import { DetailComponent } from './Components/detail/detail.component';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { CardSpellComponent } from './Components/card-spell/card-spell.component';
+import {MatIconModule} from '@angular/material/icon';
+
 
 
 @NgModule({
@@ -22,7 +26,8 @@ import {MatListModule} from '@angular/material/list';
     AppComponent,
     DashboardComponent,
     CardComponent,
-    DetailComponent
+    DetailComponent,
+    CardSpellComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +40,8 @@ import {MatListModule} from '@angular/material/list';
     MatGridListModule,
     MatDividerModule,
     MatListModule,
+    MatIconModule,
+    MatProgressBarModule
   ],
   providers: [
     ApiRiotService,
