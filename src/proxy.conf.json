@@ -1,0 +1,8 @@
+{
+  "/api": {
+    "target": "https://euw1.api.riotgames.com/lol/platform/v3",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin":true
+  }
+}
