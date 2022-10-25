@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiRiotService } from 'src/app/Services/api-riot.service';
 import { ChampionsService } from 'src/app/Services/champions.service';
-import { Champions } from 'src/app/Models/champions';
-import { Infos } from 'src/app/Models/infos';
+import { Title } from "@angular/platform-browser";
 
 @Component({
   selector: 'app-dashboard',
@@ -14,9 +13,11 @@ export class DashboardComponent implements OnInit {
   tabChampInfo!: any[]
 
   constructor(
-      private ApiRiot: ApiRiotService,
-      private championSerice: ChampionsService)
-    {}
+    private titleService: Title,
+    private ApiRiot: ApiRiotService,
+    private championSerice: ChampionsService) {
+      this.titleService.setTitle("Rotation semaine");
+     }
 
-    ngOnInit(): void { }
+  ngOnInit(): void { }
 }
