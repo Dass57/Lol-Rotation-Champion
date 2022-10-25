@@ -15,3 +15,14 @@ Afin de pouvoir exécuter l'application sur votre poste, vous devez d'aborder in
   1. Après avoir installé NodeJS, ouvrir une invite de commande
   2. Taper `npm install -g @angular/cli`
   3. Taper `npm start` pour lancer l'application
+
+# Fonctionalité
+
+### Dashboard
+Le dashboard regroupe tous les heros de la semaine (16 soit 10% de champion du jeux)
+La list des heros sont récuperé grace à l'Api riot game [CHAMPION-V3](https://developer.riotgames.com/apis#champion-v3) et la base de donné [Data Dragon](https://riot-api-libraries.readthedocs.io/en/latest/ddragon.html)
+Chaque champion est affiché avec son nom sur des cartes cliquables qui redirige vers les details du champion séléctionne
+
+
+### Detail
+C'est la page de détails de chaque champion avec les informations jugé important
