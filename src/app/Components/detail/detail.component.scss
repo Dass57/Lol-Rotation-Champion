@@ -13,7 +13,7 @@ mat-grid-tile {
   margin-top: -300px;
 }
 .mainInfo-tittle{
-  margin-top: -150px;
+  margin-top: 300px;
 }
 hr {
   border: none;
@@ -49,10 +49,19 @@ mat-grid-tile p {
   border-style: ridge;
   height: 200px;
   width: 1300px;
+  display: block;
+  margin: auto;
 }
 mat-list p {
   color: rgb(255, 255, 255);
 }
 .spell{
   height: 200px;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  margin: auto;
 }

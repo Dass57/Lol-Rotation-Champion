@@ -16,6 +16,8 @@ import { DetailComponent } from './Components/detail/detail.component';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { CardSpellComponent } from './Components/card-spell/card-spell.component';
+import {MatIconModule} from '@angular/material/icon';
 
 
 
@@ -24,7 +26,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     AppComponent,
     DashboardComponent,
     CardComponent,
-    DetailComponent
+    DetailComponent,
+    CardSpellComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +40,7 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatGridListModule,
     MatDividerModule,
     MatListModule,
+    MatIconModule,
     MatProgressBarModule
   ],
   providers: [

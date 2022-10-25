@@ -12,20 +12,18 @@ import { ChampionsService } from 'src/app/Services/champions.service';
 export class DetailComponent implements OnInit {
 
   Math: any
-  champInfo: Array<any> =[]
+  champInfo: Array<any> = []
 
   constructor(
     private route: ActivatedRoute,
     private championService: ChampionsService
   ) {
     this.Math = Math
-   }
+  }
 
   ngOnInit(): void {
     const name = String(this.route.snapshot.paramMap.get('name'))
-     this.championService.getChampionbyName(name)
-     this.champInfo = this.championService.tabChampInfoByName
-     console.log(this.champInfo);
-
+    this.championService.getChampionbyName(name)
+    this.champInfo = this.championService.tabChampInfoByName
   }
 }
