@@ -13,6 +13,9 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { CardComponent } from './Components/card/card.component';
 import { DetailComponent } from './Components/detail/detail.component';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatListModule} from '@angular/material/list';
+
 
 @NgModule({
   declarations: [
@@ -30,6 +33,8 @@ import { DetailComponent } from './Components/detail/detail.component';
     MatButtonModule,
     MatButtonToggleModule,
     MatGridListModule,
+    MatDividerModule,
+    MatListModule,
   ],
   providers: [
     ApiRiotService,
