@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  apiUrl: "/api",
+  apiUrlProxy: "/api",
+  apiUrl: `https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations`,
   api_key: 'RGAPI-32134889-a851-4661-9b46-104544123e2a'
 };
 
