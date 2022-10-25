@@ -20,7 +20,7 @@ Afin de pouvoir exécuter l'application sur votre poste, vous devez d'aborder in
 
 ### Dashboard
 * Le dashboard regroupe tous les heros de la semaine (16 soit 10% de champion du jeux)
-* La list des heros sont récuperé grace à l'Api riot game [CHAMPION-V3](https://developer.riotgames.com/apis#champion-v3) et la base de donné [Data Dragon](https://riot-api-libraries.readthedocs.io/en/latest/ddragon.html).
+* La liste des heros sont récuperé grace à l'Api riot game [CHAMPION-V3](https://developer.riotgames.com/apis#champion-v3) et la base de donné [Data Dragon](https://riot-api-libraries.readthedocs.io/en/latest/ddragon.html).
 * Chaque champion est affiché avec son nom sur des cartes cliquables qui redirige vers les details du champion séléctionne
 
 
