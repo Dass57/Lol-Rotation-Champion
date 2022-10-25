@@ -1,15 +1,25 @@
-
 .header{
   padding-top: 50px ;
+  text-align: center;
+}
+.hr{
+  margin-bottom: 20px;
+}
+.header .important{
+  text-align: center;
+  color: RGB(147, 115, 65);
+  font-size: 84px;
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 .header h1{
   text-align: center;
   color: RGB(147, 115, 65);
+  font-size: 30px;
 }
-.main{
-  background-color: RGB(10, 10, 12);
+.header p{
+  margin-top: -10px;
+  text-align: center;
 }
-.img1{
-  background: linear-gradient(to top, rgba(10,10,12,1), rgba(0,0,0,0.3)), url("/assets/img/piltover.jpg");
-}
-

@@ -5,17 +5,15 @@
 mat-grid-tile {
   background-color: RGB(10, 10, 12);
 }
-::ng-deep img {
-  height: 717;
-  z-index: 0;
-
-}
 .mainInfo {
   text-align: center;
   margin-top: 0px;
   text-transform: uppercase;
   font-style: italic;
   margin-top: -300px;
+}
+.mainInfo-tittle{
+  margin-top: -150px;
 }
 hr {
   border: none;
@@ -45,6 +43,7 @@ mat-grid-tile p {
   text-align: center;
 }
 .lore {
+  border-radius: 50px;
   z-index: 0;
   border: white;
   border-style: ridge;

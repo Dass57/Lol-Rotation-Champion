@@ -15,6 +15,8 @@ import { CardComponent } from './Components/card/card.component';
 import { DetailComponent } from './Components/detail/detail.component';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+
 
 
 @NgModule({
@@ -35,6 +37,7 @@ import {MatListModule} from '@angular/material/list';
     MatGridListModule,
     MatDividerModule,
     MatListModule,
+    MatProgressBarModule
   ],
   providers: [
     ApiRiotService,
