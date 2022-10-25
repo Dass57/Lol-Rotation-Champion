@@ -1,16 +1,22 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 
 export class ApiRiotService {
-  riot = 'https://euw1.api.riotgames.com'
-  api_key = 'RGAPI-944f6a5e-129c-46b9-a909-9532abda3844'
+  riot = environment.apiUrl;
+  api_key = environment.api_key;
   constructor(private readonly httpClient: HttpClient) {}
 
+  // getFreeChampionRotation(){
+  //   let headers = new HttpHeaders();
+  //   headers = headers.set('X-Riot-Token', this.api_key);
+  //   return this.httpClient.get(`${this.riot}/champion-rotations`,{ headers : headers })
+  // }
   getFreeChampionRotation(){
-    return this.httpClient.get(`${this.riot}/lol/platform/v3/champion-rotations?api_key=${this.api_key}`)
+    return this.httpClient.get(`https://euw1.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=RGAPI-32134889-a851-4661-9b46-104544123e2a`)
   }
 }
