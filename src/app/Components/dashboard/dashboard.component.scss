@@ -5,6 +5,11 @@
 .hr{
   margin-bottom: 20px;
 }
+@media screen and (max-width: 1800px) {
+  .hr{
+    visibility: hidden;
+  }
+}
 .header .important{
   text-align: center;
   color: RGB(147, 115, 65);
