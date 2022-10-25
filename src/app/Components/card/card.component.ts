@@ -20,8 +20,11 @@ export class CardComponent implements OnInit {
     this.ApiRiot.getFreeChampionRotation().subscribe(info => {
       let infos = info as Infos
       for (let key of infos.freeChampionIds) {
-        this.championSerice.search(key)
-        this.tabChampInfo = this.championSerice.tabChampInfo
+        this.tabChampInfo.length = 0
+        if(this.tabChampInfo.length == 0){
+          this.championSerice.search(key)
+          this.tabChampInfo = this.championSerice.tabChampInfo
+        }
       }
     })
   }
