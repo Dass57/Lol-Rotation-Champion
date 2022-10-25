@@ -17,6 +17,6 @@ export class ApiRiotService {
   //   return this.httpClient.get(`${this.riot}/champion-rotations`,{ headers : headers })
   // }
   getFreeChampionRotation(){
-    return this.httpClient.get(`${this.riot}?api_key=${this.api_key}`)
+    return this.httpClient.get(`${this.riot}?api_key=RGAPI-14b965db-fed9-4b26-8bfb-15061105cefb`)
   }
 }
