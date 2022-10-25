@@ -1,13 +1,12 @@
 <mat-grid-list cols="4" gutterSize="50px" class="main-grid">
   <mat-grid-tile *ngFor="let champ of tabChampInfo">
-    <mat-card class="card-champ" style="background-color: RGB(6, 28, 37);">
+    <mat-card class="card-champ" routerLink="/detail/{{champ.name}}">
       <mat-card-header class="champ-name">
         <mat-card-title>{{champ.name}}</mat-card-title>
         <mat-card-subtitle>{{champ.title}}</mat-card-subtitle>
       </mat-card-header>
-      <div class="centered">
-        <img mat-card-image src="assets/champion/{{champ.image.full}}">
-      </div>
+      <img class="img-hover" mat-card-image src="assets/champion/{{champ.image.full}}">
+
     </mat-card>
   </mat-grid-tile>
 </mat-grid-list>

@@ -8,14 +8,12 @@ import { Champions } from '../Models/champions';
 export class ChampionsService {
 
   tabChampInfo: Array<any> =[]
+  tabChampInfoByName: Array<any> =[]
   constructor(
     private readonly httpClient: HttpClient,) {}
 
-  getChampion() {
-    return this.httpClient.get<any>('http://localhost:4200/assets/json/champion.json/')
-  }
   search(id: string) {
-    return this.httpClient.get<any>('http://localhost:4200/assets/json/championFull.json/').subscribe(champ => {
+    return this.httpClient.get<any>('http://localhost:4200/assets/JSON/championFull.json').subscribe(champ => {
       for (var i in champ.data) {
         if (champ.data[i].key == id) {
           this.tabChampInfo.push(champ.data[i])
@@ -23,5 +21,9 @@ export class ChampionsService {
       }
     })
   }
-
+  getChampionbyName(name:string) {
+    return this.httpClient.get<any>('http://localhost:4200/assets/JSON/championFull.json').subscribe(champ =>{
+      this.tabChampInfoByName[0]=champ.data[name]
+    })
+  }
 }

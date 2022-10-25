@@ -1,8 +1,16 @@
 .card-champ {
   width: 200px;
   height: 250px;
-
+  background-color: RGB(6, 28, 37);
 }
+.card-champ:hover {
+  background-color: rgb(0, 102, 128);
+}
+.img-hover:hover{
+  transform: scale3d(1.05, 1.05, 1);
+  transition: transform 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
 mat-card-content h2 {
   color: RGB(147, 115, 65);
 }
@@ -11,6 +19,7 @@ mat-card-header mat-card-title {
 }
 mat-card-header mat-card-subtitle {
   color:white;
+  margin-bottom: 20px;
 }
 .main-grid{
   margin: 20px 100px 100px 100px;
